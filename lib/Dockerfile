@@ -1,7 +1,7 @@
-FROM quay.io/souravkl11/rgnk-v3:latest
+FROM https://github.com/Dot-ser/raganork-md
 
-RUN git clone https://github.com/souravkl11/raganork-md /skl/Raganork
-WORKDIR /skl/Raganork
+RUN git clone https://github.com/Dot-ser/raganork-md /Dot-ser/Raganork
+WORKDIR /Dot-ser/Raganork
 ENV TZ=Asia/Kolkata
 RUN yarn install --network-concurrency 1
 CMD ["node", "index.js"]
