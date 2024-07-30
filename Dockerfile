@@ -1,5 +1,3 @@
-
-
 RUN git clone https://github.com/Dot-ser/raganork-md 
 WORKDIR cd raganork-md
 ENV TZ=Asia/Kolkata
