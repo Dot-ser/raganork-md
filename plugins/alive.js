@@ -68,7 +68,7 @@ Module({
 ┃${star}│ _*Owner*_ : ${BOT_INFO.split(";")[1]}
 ┃${star}│ _*User*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
 ┃${star}│ _*Mode*_ : ${MODE}
-┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
+┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?"Heroku":"DOT'S Private (VPS)"}
 ┃${star}│ _*Available RAM*_ : ${used} of ${total}
 ┃${star}│ _*Version*_ : ${config.VERSION}
 ┃${star}│
@@ -84,7 +84,7 @@ ${cmdmenu}`
 try {
   var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
 } catch (error) {
-  var _img = await skbuffer(`https://i.imgur.com/B2YWSLk.jpg`)
+  var _img = await skbuffer(`https://te.legra.ph/file/9a039801e1fbb63080dc3.jpg`)
 }
 return await message.client.sendMessage(message.jid,{
   image: await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`),
